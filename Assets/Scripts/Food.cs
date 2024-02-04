@@ -5,15 +5,13 @@ using UnityEngine;
 public class Food : MonoBehaviour
 {
     Rigidbody2D rb;
-    public GameObject Pear;
+    
 
     void Start()
     {
-        InvokeRepeating("Spawn", 1f, 3f);
-
         rb = GetComponent<Rigidbody2D>();
-
-        rb.velocity = new Vector2(0, 10);
+        rb.velocity = new Vector2(0f, 13f);
+        rb.angularVelocity = Random.Range(-360f, 360f);
     }
 
 
@@ -26,17 +24,5 @@ public class Food : MonoBehaviour
             print(":(");
             Destroy(gameObject);
         }    
-    }
-
-    void Spawn()
-    {
-
-        var randPos = new Vector2(Random.Range(-4, 4), Random.Range(-6.3f, -6));
-
-    
-         Instantiate(Pear, randPos, Quaternion.identity);
-        
-
-        
     }
 }
