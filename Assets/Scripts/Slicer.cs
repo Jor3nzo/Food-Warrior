@@ -24,5 +24,7 @@ public class Slicer : MonoBehaviour
     {
         print(":)");
         Destroy(other.gameObject);
+        var food = other.gameObject.GetComponent<Food>();
+        food.Slice();
     }
 }

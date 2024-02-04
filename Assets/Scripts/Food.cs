@@ -5,6 +5,8 @@ using UnityEngine;
 public class Food : MonoBehaviour
 {
     Rigidbody2D rb;
+
+    public GameObject explodeParticles;
     
 
     void Start()
@@ -21,8 +23,21 @@ public class Food : MonoBehaviour
         
         if (transform.position.y < -6)
         {
-            print(":(");
-            Destroy(gameObject);
+            Miss(); 
+           
         }    
+    }
+
+    void Miss()
+    {
+        print(":("); 
+        Destroy(gameObject);
+    }
+
+    public void Slice()
+    {
+        var particles = Instantiate(explodeParticles);
+        particles.transform.position = transform.position;
+        Destroy(gameObject);
     }
 }
