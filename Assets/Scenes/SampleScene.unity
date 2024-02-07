@@ -730,31 +730,10 @@ MonoBehaviour:
   waves:
   - foods:
     - isBomb: 0
-      x: 0
+      x: -3
       delay: 0
-      isRandomPosition: 0
+      isRandomPosition: 1
       velocity: {x: 0, y: 12}
-    - isBomb: 1
-      x: 0
-      delay: 0
-      isRandomPosition: 0
-      velocity: {x: 0, y: 13}
-  - foods:
-    - isBomb: 0
-      x: -4
-      delay: 0
-      isRandomPosition: 1
-      velocity: {x: 0, y: 10}
-    - isBomb: 1
-      x: 0
-      delay: 0
-      isRandomPosition: 0
-      velocity: {x: 5, y: 10}
-    - isBomb: 0
-      x: 4
-      delay: 0
-      isRandomPosition: 1
-      velocity: {x: 5, y: 15}
   - foods:
     - isBomb: 0
       x: 3
@@ -762,16 +741,79 @@ MonoBehaviour:
       isRandomPosition: 0
       velocity: {x: 0, y: 10}
   - foods:
-    - isBomb: 1
-      x: -4
+    - isBomb: 0
+      x: -2
       delay: 0
       isRandomPosition: 0
-      velocity: {x: 0, y: 10}
+      velocity: {x: 1, y: 11}
+    - isBomb: 0
+      x: 2
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: -1, y: 12}
+    - isBomb: 0
+      x: 0
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: 0, y: 13}
+  - foods:
+    - isBomb: 0
+      x: -5
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: 0, y: 13}
+    - isBomb: 0
+      x: -3
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: 0, y: 13}
+    - isBomb: 0
+      x: -1
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: 0, y: 13}
+    - isBomb: 0
+      x: 3
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: 0, y: 13}
+  - foods:
+    - isBomb: 0
+      x: -5
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: -2, y: 12}
     - isBomb: 1
       x: -3
-      delay: 1
+      delay: 0
       isRandomPosition: 0
-      velocity: {x: 0, y: 10}
+      velocity: {x: 2, y: 11}
+    - isBomb: 0
+      x: -1
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: 0, y: 12}
+    - isBomb: 0
+      x: 3
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: 1, y: 11}
+  - foods:
+    - isBomb: 1
+      x: 0
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: 1, y: 14}
+    - isBomb: 0
+      x: 0
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: 2, y: 14}
+    - isBomb: 0
+      x: 0
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: 0, y: 14}
 --- !u!1 &1805170156
 GameObject:
   m_ObjectHideFlags: 0
