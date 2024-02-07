@@ -12,7 +12,7 @@ public class Food : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(0f, 13f);
+        //rb.velocity = new Vector2(0f, 13f);
         rb.angularVelocity = Random.Range(-360f, 360f);
     }
 
