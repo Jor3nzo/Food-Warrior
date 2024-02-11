@@ -814,6 +814,22 @@ MonoBehaviour:
       delay: 0
       isRandomPosition: 0
       velocity: {x: 0, y: 14}
+  - foods:
+    - isBomb: 0
+      x: -3
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: 2, y: 14}
+    - isBomb: 1
+      x: 0
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: 1, y: 14}
+    - isBomb: 0
+      x: 3
+      delay: 0
+      isRandomPosition: 0
+      velocity: {x: -2, y: 14}
 --- !u!1 &1805170156
 GameObject:
   m_ObjectHideFlags: 0
