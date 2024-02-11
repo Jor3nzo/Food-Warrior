@@ -2,8 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Food : MonoBehaviour
 {
+
+
     Rigidbody2D rb;
 
     public GameObject explodeParticles;
@@ -12,6 +15,9 @@ public class Food : MonoBehaviour
     public GameObject rightSlice;
 
     public Color juiceColor;
+
+    public AudioClip throwSound;
+    public AudioClip sliceSound;
     
 
     void Start()
@@ -19,6 +25,8 @@ public class Food : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         //rb.velocity = new Vector2(0f, 13f);
         rb.angularVelocity = Random.Range(-360f, 360f);
+
+        AudioSystem.Play(throwSound);
     }
 
 
@@ -51,8 +59,9 @@ public class Food : MonoBehaviour
         var rightRb = rightSlice.AddComponent<Rigidbody2D>();
         leftRb.velocity = rb.velocity + new Vector2(-2,0);
         rightRb.velocity = rb.velocity + new Vector2(2,0);
-        
 
+        AudioSystem.Play(sliceSound);
+        GameManager.score++;
         Destroy(gameObject);
     }
 }
